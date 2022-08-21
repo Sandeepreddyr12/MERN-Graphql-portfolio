@@ -1,12 +1,20 @@
-import React from "react";
 
-const About = () => {
 
+
+
+const About = ()  => {
+  interface  HTMLAttributes<T> {
+    alt?: string;
+    crossOrigin?: "anonymous" | "use-credentials" | "";
+    decoding?: "async" | "auto" | "sync";
+    height?: number | string;
+    // ...
+}
   
 
   return (
     <div
-      // name="about"
+      name = "about"
       className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
